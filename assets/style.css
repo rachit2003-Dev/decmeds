@@ -8,6 +8,111 @@
   scroll-behavior: smooth;
 }
 
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 2.5rem;
+  height: 70px;
+  background-color: #3586ff
+}
+
+.logo {
+  color: aliceblue;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.fas {
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.list-nav-bar {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+}
+
+.list-item a {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin-left: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.list-item a:hover {
+  color: #a0a0a0;
+}
+
+.burger-menu {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .list-item a {
+      font-size: 0.875rem;
+  }
+
+  .logo {
+      font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 578px) {
+
+  .list-item a {
+      font-size: 1rem;
+
+  }
+
+  .list-nav-bar.active {
+      right: 0;
+  }
+
+  .list-nav-bar {
+      display: flex;
+      position: fixed;
+      right: -100%;
+      top: 60px;
+      width: 35%;
+      background-color: #3586ff5d;
+      text-align: center;
+      flex-direction: column;
+      transition: 0.7s;
+      gap: 18px;
+      border-radius: 0 0 10px 10px;
+  }
+
+  .burger-menu {
+      display: block;
+      cursor: pointer;
+  }
+}
+
+
+/*---------------------------------------
+   home Section              
+-----------------------------------------*/
+
+#home{
+  width: 100%;
+  height: 60%;
+}
+
+
 /*---------------------------------------
     Why-us Section              
 -----------------------------------------*/

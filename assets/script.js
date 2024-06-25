@@ -12,3 +12,12 @@ inputs.forEach(ipt => {
         ipt.parentNode.classList.remove("focus");
     });
 });
+
+const hamburguer = document.getElementById("burger-menu")
+const navMenu = document.querySelector(".list-nav-bar")
+
+
+hamburguer.addEventListener("click", ()=>{
+    hamburguer.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
